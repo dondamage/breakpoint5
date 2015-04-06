@@ -1,10 +1,12 @@
 # breakpoint5
-to be announced.
+The intrinsics of this project are yet to be announced.
 
-following technologies will be adopted:
-- Python (Version 3.4)
-- Tkinter or PyQt
-- XML/JSON Data Structures
-- SQL Database
-- Unit Testing
-
+This project is meant to be a learning effort for various programming related subjects.
+The following technologies will be adopted:
+- Python (version 3.4)
+- tkinter or PyQt
+- XML/JSON data structures
+- SQL database
+- Unit testing
+- Bug/Issue tracking
+- Project management

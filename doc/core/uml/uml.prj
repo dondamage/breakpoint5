@@ -1,6 +1,6 @@
 format 74
 "uml"
-  revision 1
+  revision 2
   modified_by 20 "seba"
 
 
@@ -125,6 +125,164 @@ ${docstring}${members}
       end
     end
 
+    class 136980 "CardDeck"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl "class ${name}${inherit}:
+${docstring}${members}
+"
+      idl_decl ""
+      explicit_switch_type ""
+      
+      operation 134932 "shuffle"
+	public explicit_return_type ""
+	nparams 0
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${)}:
+${docstring}${body}
+"
+	
+      end
+
+      operation 135060 "pop"
+	public explicit_return_type ""
+	nparams 0
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${)}:
+${docstring}${body}
+"
+	
+      end
+
+      operation 135188 "peek"
+	public explicit_return_type ""
+	nparams 0
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${)}:
+${docstring}${body}
+"
+	
+      end
+
+      operation 135316 "push"
+	public explicit_return_type ""
+	nparams 0
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${)}:
+${docstring}${body}
+"
+	
+      end
+
+      operation 135572 "search"
+	public explicit_return_type ""
+	nparams 0
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${)}:
+${docstring}${body}
+"
+	
+      end
+
+      operation 135444 "getCard"
+	public explicit_return_type ""
+	nparams 0
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${)}:
+${docstring}${body}
+"
+	
+      end
+
+      operation 135700 "getCards"
+	public explicit_return_type ""
+	nparams 0
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${)}:
+${docstring}${body}
+"
+	
+      end
+
+      attribute 138516 "size"
+	private explicit_type ""
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl "${comment}${self}${name} = ${value}
+"
+	idl_decl ""
+      end
+
+      attribute 138644 "maxSIze"
+	private explicit_type ""
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl "${comment}${self}${name} = ${value}
+"
+	idl_decl ""
+      end
+
+      attribute 138772 "isEmpty"
+	private explicit_type ""
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl "${comment}${self}${name} = ${value}
+"
+	idl_decl ""
+      end
+    end
+
+    class 136724 "Token"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl "class ${name}${inherit}:
+${docstring}${members}
+"
+      idl_decl ""
+      explicit_switch_type ""
+      
+      attribute 138900 "type"
+	private explicit_type ""
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl "${comment}${self}${name} = ${value}
+"
+	idl_decl ""
+      end
+
+      attribute 139028 "name"
+	private explicit_type ""
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl "${comment}${self}${name} = ${value}
+"
+	idl_decl ""
+      end
+    end
+
     class 129684 "Die"
       visibility package 
       cpp_decl ""
@@ -175,82 +333,7 @@ ${docstring}${members}
       idl_decl ""
       explicit_switch_type ""
       
-    end
-
-    class 128660 "SpellCard"
-      visibility package 
-      cpp_decl ""
-      java_decl ""
-      php_decl ""
-      python_2_2 python_decl "class ${name}${inherit}:
-${docstring}${members}
-"
-      idl_decl ""
-      explicit_switch_type ""
-      
-    end
-
-    class 128916 "FollowerCard"
-      visibility package 
-      cpp_decl ""
-      java_decl ""
-      php_decl ""
-      python_2_2 python_decl "class ${name}${inherit}:
-${docstring}${members}
-"
-      idl_decl ""
-      explicit_switch_type ""
-      
-    end
-
-    class 129044 "ObjectCard"
-      visibility package 
-      cpp_decl ""
-      java_decl ""
-      php_decl ""
-      python_2_2 python_decl "class ${name}${inherit}:
-${docstring}${members}
-"
-      idl_decl ""
-      explicit_switch_type ""
-      
-    end
-
-    class 129172 "EventCard"
-      visibility package 
-      cpp_decl ""
-      java_decl ""
-      php_decl ""
-      python_2_2 python_decl "class ${name}${inherit}:
-${docstring}${members}
-"
-      idl_decl ""
-      explicit_switch_type ""
-      
-    end
-
-    class 129300 "AdventureCard"
-      visibility package 
-      cpp_decl ""
-      java_decl ""
-      php_decl ""
-      python_2_2 python_decl "class ${name}${inherit}:
-${docstring}${members}
-"
-      idl_decl ""
-      explicit_switch_type ""
-      
       attribute 129812 "title"
-	private explicit_type ""
-	cpp_decl ""
-	java_decl ""
-	php_decl ""
-	python_decl "${comment}${self}${name} = ${value}
-"
-	idl_decl ""
-      end
-
-      attribute 129940 "cardType"
 	private explicit_type ""
 	cpp_decl ""
 	java_decl ""
@@ -269,6 +352,120 @@ ${docstring}${members}
 "
 	idl_decl ""
       end
+    end
+
+    class 128660 "SpellCard"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl "class ${name}${inherit}:
+${docstring}${members}
+"
+      idl_decl ""
+      explicit_switch_type ""
+      
+      operation 134676 "cast"
+	public explicit_return_type ""
+	nparams 0
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${)}:
+${docstring}${body}
+"
+	
+      end
+
+      classrelation 136084 // <generalisation>
+	relation 135828 ---|>
+	  a public
+	    python "${type}"
+	    classrelation_ref 136084 // <generalisation>
+	  b parent class_ref 128532 // Card
+      end
+    end
+
+    class 128916 "FollowerCard"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl "class ${name}${inherit}:
+${docstring}${members}
+"
+      idl_decl ""
+      explicit_switch_type ""
+      
+      classrelation 135188 // <generalisation>
+	relation 134932 ---|>
+	  a public
+	    python "${type}"
+	    classrelation_ref 135188 // <generalisation>
+	  b parent class_ref 129300 // AdventureCard
+      end
+    end
+
+    class 129044 "ObjectCard"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl "class ${name}${inherit}:
+${docstring}${members}
+"
+      idl_decl ""
+      explicit_switch_type ""
+      
+      classrelation 135060 // <generalisation>
+	relation 134804 ---|>
+	  a public
+	    python "${type}"
+	    classrelation_ref 135060 // <generalisation>
+	  b parent class_ref 129300 // AdventureCard
+      end
+    end
+
+    class 129172 "EventCard"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl "class ${name}${inherit}:
+${docstring}${members}
+"
+      idl_decl ""
+      explicit_switch_type ""
+      
+      classrelation 135700 // <generalisation>
+	relation 135444 ---|>
+	  a public
+	    python "${type}"
+	    classrelation_ref 135700 // <generalisation>
+	  b parent class_ref 129300 // AdventureCard
+      end
+    end
+
+    class 129300 "AdventureCard"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl "class ${name}${inherit}:
+${docstring}${members}
+"
+      idl_decl ""
+      explicit_switch_type ""
+      
+      attribute 129940 "cardType"
+	private explicit_type ""
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl "${comment}${self}${name} = ${value}
+"
+	idl_decl ""
+      end
 
       attribute 129684 "encounterNumber"
 	private explicit_type ""
@@ -278,6 +475,66 @@ ${docstring}${members}
 	python_decl "${comment}${self}${name} = ${value}
 "
 	idl_decl ""
+      end
+
+      operation 134804 "encounter"
+	public explicit_return_type ""
+	nparams 0
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${)}:
+${docstring}${body}
+"
+	
+      end
+
+      classrelation 135828 // <generalisation>
+	relation 135572 ---|>
+	  a public
+	    python "${type}"
+	    classrelation_ref 135828 // <generalisation>
+	  b parent class_ref 128532 // Card
+      end
+    end
+
+    class 130068 "PlaceCard"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl "class ${name}${inherit}:
+${docstring}${members}
+"
+      idl_decl ""
+      explicit_switch_type ""
+      
+      classrelation 135316 // <generalisation>
+	relation 135060 ---|>
+	  a public
+	    python "${type}"
+	    classrelation_ref 135316 // <generalisation>
+	  b parent class_ref 129300 // AdventureCard
+      end
+    end
+
+    class 130196 "StrangerCard"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl "class ${name}${inherit}:
+${docstring}${members}
+"
+      idl_decl ""
+      explicit_switch_type ""
+      
+      classrelation 135444 // <generalisation>
+	relation 135188 ---|>
+	  a public
+	    python "${type}"
+	    classrelation_ref 135444 // <generalisation>
+	  b parent class_ref 129300 // AdventureCard
       end
     end
 
@@ -292,6 +549,33 @@ ${docstring}${members}
       idl_decl ""
       explicit_switch_type ""
       
+      classrelation 135572 // <generalisation>
+	relation 135316 ---|>
+	  a public
+	    python "${type}"
+	    classrelation_ref 135572 // <generalisation>
+	  b parent class_ref 129300 // AdventureCard
+      end
+    end
+
+    class 136852 "AlignmentCard"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl "class ${name}${inherit}:
+${docstring}${members}
+"
+      idl_decl ""
+      explicit_switch_type ""
+      
+      classrelation 136212 // <generalisation>
+	relation 135956 ---|>
+	  a public
+	    python "${type}"
+	    classrelation_ref 136212 // <generalisation>
+	  b parent class_ref 128532 // Card
+      end
     end
 
     class 129556 "CharacterCard"
@@ -305,9 +589,116 @@ ${docstring}${members}
       idl_decl ""
       explicit_switch_type ""
       
+      classrelation 135956 // <generalisation>
+	relation 135700 ---|>
+	  a public
+	    python "${type}"
+	    classrelation_ref 135956 // <generalisation>
+	  b parent class_ref 128532 // Card
+      end
+
+      attribute 136596 "baseStrength"
+	private explicit_type ""
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl "${comment}${self}${name} = ${value}
+"
+	idl_decl ""
+      end
+
+      attribute 136724 "baseCraft"
+	private explicit_type ""
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl "${comment}${self}${name} = ${value}
+"
+	idl_decl ""
+      end
+
+      attribute 137492 "startLife"
+	private explicit_type ""
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl "${comment}${self}${name} = ${value}
+"
+	idl_decl ""
+      end
+
+      attribute 137620 "startFate"
+	private explicit_type ""
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl "${comment}${self}${name} = ${value}
+"
+	idl_decl ""
+      end
+
+      attribute 137108 "startGold"
+	private explicit_type ""
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl "${comment}${self}${name} = ${value}
+"
+	idl_decl ""
+      end
+
+      attribute 137236 "startAlignment"
+	private explicit_type ""
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl "${comment}${self}${name} = ${value}
+"
+	idl_decl ""
+      end
+
+      attribute 137748 "lifeTokens"
+	private explicit_type ""
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl "${comment}${self}${name} = ${value}
+"
+	idl_decl ""
+      end
+
+      attribute 137876 "fateTokens"
+	private explicit_type ""
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl "${comment}${self}${name} = ${value}
+"
+	idl_decl ""
+      end
+
+      attribute 138004 "goldCoins"
+	private explicit_type ""
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl "${comment}${self}${name} = ${value}
+"
+	idl_decl ""
+      end
+
+      attribute 138132 "nStartSpells"
+	private explicit_type ""
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl "${comment}${self}${name} = ${value}
+"
+	idl_decl ""
+      end
     end
 
-    classdiagram 128404 "Player"
+    classdiagram 128404 "core-player"
       draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
       size A4
     end
@@ -323,7 +714,7 @@ ${docstring}${members}
       idl_decl ""
       explicit_switch_type ""
       
-      attribute 128788 "character"
+      attribute 128788 "characterCard"
 	private type class_ref 129556 // CharacterCard
 	cpp_decl ""
 	java_decl ""
@@ -333,8 +724,9 @@ ${docstring}${members}
 	idl_decl ""
       end
 
-      attribute 129428 "alignment"
+      attribute 129428 "alignmentCard"
 	private explicit_type ""
+	init_value "None"
 	cpp_decl ""
 	java_decl ""
 	php_decl ""
@@ -439,7 +831,7 @@ ${docstring}${members}
       end
     end
 
-    class 130068 "PlaceCard"
+    class 137108 "TokenPool"
       visibility package 
       cpp_decl ""
       java_decl ""
@@ -450,9 +842,62 @@ ${docstring}${members}
       idl_decl ""
       explicit_switch_type ""
       
+      attribute 139156 "size"
+	private explicit_type ""
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl "${comment}${self}${name} = ${value}
+"
+	idl_decl ""
+      end
+
+      attribute 139284 "maxSize"
+	private explicit_type ""
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl "${comment}${self}${name} = ${value}
+"
+	idl_decl ""
+      end
+
+      attribute 139412 "isEmpty"
+	private explicit_type ""
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl "${comment}${self}${name} = ${value}
+"
+	idl_decl ""
+      end
+
+      operation 135828 "add"
+	public explicit_return_type ""
+	nparams 0
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${)}:
+${docstring}${body}
+"
+	
+      end
+
+      operation 136084 "remove"
+	public explicit_return_type ""
+	nparams 0
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${)}:
+${docstring}${body}
+"
+	
+      end
     end
 
-    class 130196 "StrangerCard"
+    class 137236 "ActionTable"
       visibility package 
       cpp_decl ""
       java_decl ""
@@ -463,6 +908,17 @@ ${docstring}${members}
       idl_decl ""
       explicit_switch_type ""
       
+      operation 136340 "getAction"
+	public explicit_return_type ""
+	nparams 0
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${)}:
+${docstring}${body}
+"
+	
+      end
     end
   end
 end
